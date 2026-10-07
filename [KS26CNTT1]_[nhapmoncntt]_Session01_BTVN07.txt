@@ -1,0 +1,18 @@
+Bài 7: Rà soát và hoàn thiện mô hình xử lý thông tin tại FastShip
+Phần 1: Phân tích vấn đề
+Các thành phần bị xếp sai:
+
+Hóa đơn in ra giấy: Sai nhóm Input → phải là Output vì đây là kết quả được hệ thống in ra.
+RAM: Sai nhóm Process → RAM là nơi lưu trữ tạm thời dữ liệu nên thuộc Storage.
+Camera quét mã vạch: Sai nhóm Process → đây là thiết bị Input, dùng để đưa thông tin mã vạch vào hệ thống.
+Ổ cứng HDD: Sai nhóm Output → HDD dùng để lưu trữ dữ liệu lâu dài, nên thuộc Storage.
+Phần 2: Bảng IPO hoàn chỉnh
+Nhóm	       Thành phần	                   Chức năng
+Input	   Thông tin người nhận	   Dữ liệu được nhập vào hệ thống
+Input	   Bàn phím nhập liệu	   Nhập thông tin vận đơn
+Input	   Camera quét mã vạch	   Đưa mã vận đơn vào hệ thống
+Process	   CPU	                   Xử lý dữ liệu, tính cước phí
+Output	   Hóa đơn in ra giấy	   Kết quả được xuất ra
+Output	   Màn hình	           Hiển thị trạng thái đơn hàng
+Storage	   RAM	                   Lưu dữ liệu tạm thời khi xử lý
+Storage	   Ổ cứng HDD	           Lưu lịch sử và thông tin vận đơn
